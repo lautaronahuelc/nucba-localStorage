@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movimientos</title>
+</head>
+<body>
+    <form class="operacion">
+        <h2 class="titulo">Operación</h2>
+        <div>
+            <label for="tipo">Tipo:</label>
+            <select name="tipo" id="tipo">
+                <option value="ingreso">Ingreso</option>
+                <option value="egreso">Egreso</option>
+            </select>
+        </div>
+        <div>
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion">
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
+        </div>
+        <div>
+            <label for="importe">Importe:</label>
+            <input type="number" id="importe">
+        </div>
+        <input type="submit" value="Agregar">
+    </form>
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th class="titulo">Descripción</th>
+                <th class="titulo">Fecha</th>
+                <th class="titulo">Importe</th>
+                <th class="titulo">Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Peluquería</td>
+                <td>21/05/2022</td>
+                <td>$20.000,00</td>
+                <td>icon</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
